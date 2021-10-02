@@ -11,17 +11,10 @@
 <body>
     <script>
         let a;
-        let n = prompt("Input a number from 1 to 7");
-        if (n < 1) {
+        let n = prompt("Input a number from 0 to 6");
+        if (n < 0 || n > 6 || isNaN(n)) {
             alert("Input a correct number from 1 to 7!");
         }
-        else if (n > 7) {
-            alert("Input a correct number from 1 to 7!");
-        }
-        else if (isNaN(n)) {
-            alert("Input a correct number from 1 to 7!");
-        }
-        n--;
         let lang = prompt("Input a language");
         let en = ["monday", "tuesday", "wensday", "thursday", "friday", "saturday", "sunday"];
         let ua = ["понеділок", "вівторок", "середа", "четвер", "п'ятниця", "субота", "неділя"];
